@@ -6,8 +6,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'fast_jsonapi/version'
 
 Gem::Specification.new do |gem|
-  gem.name = 'fast_jsonapi'
-  gem.version = FastJsonapi::VERSION
+  gem.name = 'fast_jsonapi-staging'
+  gem.version = FastJsonapi::STAGING_VERSION
 
   gem.required_ruby_version = '>= 2.0.0' if gem.respond_to? :required_ruby_version=
   gem.required_rubygems_version = Gem::Requirement.new('>= 0') if gem.respond_to? :required_rubygems_version=
@@ -38,7 +38,4 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency('rspec-benchmark', ['~> 0.3.0'])
   gem.add_development_dependency('skylight', ['~> 1.3'])
   gem.add_development_dependency('sqlite3', ['~> 1.3'])
-  # This is our gem dependency
-  gem.add_dependency 'fast_jsonapi-local'
-  gem.add_dependency 'fast_jsonapi-staging'
 end
