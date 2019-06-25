@@ -140,10 +140,6 @@ workflows:
       - audit_code:
           requires:
             - checkout_and_bundle
-      - run_tests:
-          requires:
-            - audit_code
-            - checkout_and_bundle
       - upload_to_cloudsmith:
           requires:
             - checkout_and_bundle
