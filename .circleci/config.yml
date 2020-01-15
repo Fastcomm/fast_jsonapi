@@ -38,7 +38,7 @@ jobs:
       - run:
           name: Check linting issues
           command: |
-            bundle exec rubocop -R -P
+            bundle exec rubocop -P
       - run:
           name: Check security vulnerabilities in gems
           command: |
