@@ -39,6 +39,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency('skylight', ['~> 1.3'])
   gem.add_development_dependency('sqlite3', ['~> 1.3'])
   # This is our gem dependency
-  gem.add_dependency 'fast_jsonapi-local'
-  gem.add_dependency 'fast_jsonapi-staging'
+  # gem.add_dependency 'fast_jsonapi-local'
+  # gem.add_dependency 'fast_jsonapi-staging'
 end
